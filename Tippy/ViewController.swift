@@ -44,8 +44,14 @@ class ViewController: UIViewController {
         let doubleTipAmount = arrayTipPercentages[segmentedControlTipPercentages.selectedSegmentIndex] * doubleBillAmount
         let doubleTotalBill = doubleBillAmount + doubleTipAmount
         
-        labelTipAmount.text = String(format: "$%.2f", doubleTipAmount)
-        labelTotalBill.text = String(format: "$%.2f", doubleTotalBill)
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.locale = Locale.current
+        labelTipAmount.text = formatter.string(from: NSNumber(value: doubleTipAmount)) ?? "$\(doubleTipAmount)"
+        labelTotalBill.text = formatter.string(from: NSNumber(value: doubleTotalBill)) ?? "$\(doubleTotalBill)"
+        
+        //labelTipAmount.text = String(format: "$%.2f", doubleTipAmount)
+        //labelTotalBill.text = String(format: "$%.2f", doubleTotalBill)
     }
 
     override func didReceiveMemoryWarning() {
