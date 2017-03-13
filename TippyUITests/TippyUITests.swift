@@ -28,9 +28,31 @@ class TippyUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testExample2() {
+        let app = XCUIApplication()
+        let element = app.otherElements.containing(.navigationBar, identifier:"Tip Calculator").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
+        let textField = element.children(matching: .textField).element
+        app.buttons["25%"].tap()
+        app.keys["1"].tap()
+        app.keys["0"].tap()
+        var tipAmount = app.staticTexts["labelTipAmount"].label
+        var totalBill = app.staticTexts["labelTotalBill"].label
+        
+        print("Found tip amount: " + tipAmount)
+        print("Found total bill: " + totalBill)
+        XCTAssert(tipAmount == "$2.50")
+        XCTAssert(totalBill == "$12.50")
+        
+        app.navigationBars["Tip Calculator"].staticTexts["Tip Calculator"].tap()
+        
+        app.keys["0"].tap()
+        tipAmount = app.staticTexts["labelTipAmount"].label
+        totalBill = app.staticTexts["labelTotalBill"].label
+        
+        XCTAssert(tipAmount == "$25.00")
+        XCTAssert(totalBill == "$125.00")
+        
+        print("Found tip amount: " + tipAmount)
+        print("Found total bill: " + totalBill)
     }
-    
 }

@@ -26,7 +26,6 @@ class ViewController: UIViewController {
         
         textfieldBillAmount.becomeFirstResponder()
     }
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,9 +48,6 @@ class ViewController: UIViewController {
         formatter.locale = Locale.current
         labelTipAmount.text = formatter.string(from: NSNumber(value: doubleTipAmount)) ?? "$\(doubleTipAmount)"
         labelTotalBill.text = formatter.string(from: NSNumber(value: doubleTotalBill)) ?? "$\(doubleTotalBill)"
-        
-        //labelTipAmount.text = String(format: "$%.2f", doubleTipAmount)
-        //labelTotalBill.text = String(format: "$%.2f", doubleTotalBill)
     }
 
     override func didReceiveMemoryWarning() {
