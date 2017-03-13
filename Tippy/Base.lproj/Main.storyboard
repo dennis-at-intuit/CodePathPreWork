@@ -130,7 +130,7 @@
                                     <segment title="25%"/>
                                 </segments>
                                 <connections>
-                                    <action selector="updateDefaultTipIndex:" destination="ksq-mC-sfp" eventType="valueChanged" id="otP-eK-zIH"/>
+                                    <action selector="updateTotalBill2:" destination="BYZ-38-t0r" eventType="valueChanged" id="j0j-vx-Y18"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>

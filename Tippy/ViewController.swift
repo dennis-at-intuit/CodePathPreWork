@@ -23,7 +23,10 @@ class ViewController: UIViewController {
         print("Default Tip Percentage index: \(defaultTipPercentageIndex)")
         
         segmentedControlTipPercentages.selectedSegmentIndex = defaultTipPercentageIndex!
+        
+        textfieldBillAmount.becomeFirstResponder()
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,10 +51,6 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func onTap(_ sender: Any) {
-        view.endEditing(true);
     }
 }
 
