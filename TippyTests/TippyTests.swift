@@ -24,6 +24,8 @@ class TippyTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        XCTAssert(ViewController.calculateTotalBill(billAmount: 100.0, tipPercentage: 0.17) == 117.0)
     }
     
     func testPerformanceExample() {

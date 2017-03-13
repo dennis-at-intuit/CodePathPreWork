@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         
         let doubleBillAmount = Double(textfieldBillAmount.text!) ?? 0;
         let doubleTipAmount = arrayTipPercentages[segmentedControlTipPercentages.selectedSegmentIndex] * doubleBillAmount
-        let doubleTotalBill = doubleBillAmount + doubleTipAmount
+        let doubleTotalBill = ViewController.calculateTotalBill(billAmount: doubleBillAmount, tipPercentage: doubleTipAmount)
         
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
@@ -50,6 +50,10 @@ class ViewController: UIViewController {
         labelTotalBill.text = formatter.string(from: NSNumber(value: doubleTotalBill)) ?? "$\(doubleTotalBill)"
     }
 
+    static func calculateTotalBill(billAmount: Double, tipPercentage: Double) -> Double {
+        return billAmount * ( 1.00 + tipPercentage )
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

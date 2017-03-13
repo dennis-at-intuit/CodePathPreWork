@@ -4,7 +4,7 @@
 
 Submitted by: **Dennis Lin**
 
-Time spent: **1.5** hours spent in total
+Time spent: **2.5** hours spent in total
 
 ## User Stories
 
@@ -21,6 +21,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
+--  Added unit test to compute total bill.
 --  Added UI unit test.
 --  Added localization for Japanese and Traditional Chinese.
 
