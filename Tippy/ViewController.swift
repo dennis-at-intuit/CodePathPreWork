@@ -15,6 +15,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var textfieldBillAmount: UITextField!
     @IBOutlet weak var segmentedControlTipPercentages: UISegmentedControl!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let defaults = UserDefaults.standard
+        let stringIndex = defaults.string(forKey: "defaultTipPercentageIndex")
+        let defaultTipPercentageIndex = (nil == stringIndex) ? 2 : Int(stringIndex!)
+        print("Default Tip Percentage index: \(defaultTipPercentageIndex)")
+        
+        segmentedControlTipPercentages.selectedSegmentIndex = defaultTipPercentageIndex!
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

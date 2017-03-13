@@ -10,6 +10,7 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var segmentedControllerDefaultTip: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +22,12 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func updateDefaultTipIndex(_ sender: Any) {
+        let defaults = UserDefaults.standard
+       
+        defaults.set(segmentedControllerDefaultTip.selectedSegmentIndex, forKey: "defaultTipPercentageIndex")
+        defaults.synchronize()
+    }
 
     /*
     // MARK: - Navigation
@@ -35,6 +42,11 @@ class SettingsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("view will appear")
+        let defaults = UserDefaults.standard
+        let stringIndex = defaults.string(forKey: "defaultTipPercentageIndex")
+        let defaultTipPercentageIndex = (nil == stringIndex) ? 2 : Int(stringIndex!)
+        
+        segmentedControllerDefaultTip.selectedSegmentIndex = defaultTipPercentageIndex!
     }
     
     override func viewDidAppear(_ animated: Bool) {
