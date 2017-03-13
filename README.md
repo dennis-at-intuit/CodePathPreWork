@@ -22,6 +22,7 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 --  Added UI unit test.
+--  Added localization for Japanese and Traditional Chinese.
 
 - [ ] List anything else that you can get done to improve the app functionality!
 
