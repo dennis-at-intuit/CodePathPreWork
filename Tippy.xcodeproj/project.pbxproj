@@ -15,6 +15,9 @@
 		75B97B391E76357A00DB04AB /* TippyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B97B381E76357A00DB04AB /* TippyTests.swift */; };
 		75B97B441E76357A00DB04AB /* TippyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B97B431E76357A00DB04AB /* TippyUITests.swift */; };
 		75F13D401E765307009AE235 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F13D3F1E765307009AE235 /* SettingsViewController.swift */; };
+		75F13D471E770439009AE235 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75F13D491E770439009AE235 /* InfoPlist.strings */; };
+		75F13D4C1E770439009AE235 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75F13D4E1E770439009AE235 /* InfoPlist.strings */; };
+		75F13D511E77043A009AE235 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75F13D531E77043A009AE235 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,13 @@
 		75B97B431E76357A00DB04AB /* TippyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TippyUITests.swift; sourceTree = "<group>"; };
 		75B97B451E76357A00DB04AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75F13D3F1E765307009AE235 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		75F13D411E770211009AE235 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		75F13D421E770211009AE235 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		75F13D431E770216009AE235 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		75F13D441E770216009AE235 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		75F13D481E770439009AE235 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75F13D4D1E770439009AE235 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75F13D521E77043A009AE235 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,7 @@
 		75B97B221E76357A00DB04AB /* Tippy */ = {
 			isa = PBXGroup;
 			children = (
+				75F13D4E1E770439009AE235 /* InfoPlist.strings */,
 				75B97B231E76357A00DB04AB /* AppDelegate.swift */,
 				75B97B251E76357A00DB04AB /* ViewController.swift */,
 				75B97B271E76357A00DB04AB /* Main.storyboard */,
@@ -113,6 +124,7 @@
 		75B97B371E76357A00DB04AB /* TippyTests */ = {
 			isa = PBXGroup;
 			children = (
+				75F13D491E770439009AE235 /* InfoPlist.strings */,
 				75B97B381E76357A00DB04AB /* TippyTests.swift */,
 				75B97B3A1E76357A00DB04AB /* Info.plist */,
 			);
@@ -122,6 +134,7 @@
 		75B97B421E76357A00DB04AB /* TippyUITests */ = {
 			isa = PBXGroup;
 			children = (
+				75F13D531E77043A009AE235 /* InfoPlist.strings */,
 				75B97B431E76357A00DB04AB /* TippyUITests.swift */,
 				75B97B451E76357A00DB04AB /* Info.plist */,
 			);
@@ -236,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75B97B2E1E76357A00DB04AB /* LaunchScreen.storyboard in Resources */,
+				75F13D4C1E770439009AE235 /* InfoPlist.strings in Resources */,
 				75B97B2B1E76357A00DB04AB /* Assets.xcassets in Resources */,
 				75B97B291E76357A00DB04AB /* Main.storyboard in Resources */,
 			);
@@ -245,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F13D471E770439009AE235 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F13D511E77043A009AE235 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +320,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				75B97B281E76357A00DB04AB /* Base */,
+				75F13D411E770211009AE235 /* ja */,
+				75F13D431E770216009AE235 /* zh-Hant */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -312,8 +330,34 @@
 			isa = PBXVariantGroup;
 			children = (
 				75B97B2D1E76357A00DB04AB /* Base */,
+				75F13D421E770211009AE235 /* ja */,
+				75F13D441E770216009AE235 /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		75F13D491E770439009AE235 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75F13D481E770439009AE235 /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		75F13D4E1E770439009AE235 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75F13D4D1E770439009AE235 /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		75F13D531E77043A009AE235 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75F13D521E77043A009AE235 /* ja */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -323,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -372,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

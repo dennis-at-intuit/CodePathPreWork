@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Tippy/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.1" build-num="8B62"/>
+    </header>
+    <body/>
+  </file>
+  <file original="Tippy/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.1" build-num="8B62"/>
+    </header>
+    <body>
+      <trans-unit id="4vi-xD-q1k.text">
+        <source>Tip Amount</source>
+        <target>Tip Amount</target>
+        <note>Class = "UILabel"; text = "サービス費"; ObjectID = "4vi-xD-q1k";</note>
+      </trans-unit>
+      <trans-unit id="7Mi-bC-MNq.title">
+        <source>Tip Calculator</source>
+        <target>Tip Calculator</target>
+        <note>Class = "UINavigationItem"; title = "サービス費の計算ツール"; ObjectID = "7Mi-bC-MNq";</note>
+      </trans-unit>
+      <trans-unit id="Fbw-pQ-v2j.text">
+        <source>Default Tip</source>
+        <target>Default Tip</target>
+        <note>Class = "UILabel"; text = "最初に決められたサービス費"; ObjectID = "Fbw-pQ-v2j";</note>
+      </trans-unit>
+      <trans-unit id="HZW-Ij-c5U.segmentTitles[0]">
+        <source>15%</source>
+        <target>15%</target>
+        <note>Class = "UISegmentedControl"; HZW-Ij-c5U.segmentTitles[0] = "15%"; ObjectID = "HZW-Ij-c5U";</note>
+      </trans-unit>
+      <trans-unit id="HZW-Ij-c5U.segmentTitles[1]">
+        <source>18%</source>
+        <target>18%</target>
+        <note>Class = "UISegmentedControl"; HZW-Ij-c5U.segmentTitles[1] = "18%"; ObjectID = "HZW-Ij-c5U";</note>
+      </trans-unit>
+      <trans-unit id="HZW-Ij-c5U.segmentTitles[2]">
+        <source>20%</source>
+        <target>20%</target>
+        <note>Class = "UISegmentedControl"; HZW-Ij-c5U.segmentTitles[2] = "20%"; ObjectID = "HZW-Ij-c5U";</note>
+      </trans-unit>
+      <trans-unit id="HZW-Ij-c5U.segmentTitles[3]">
+        <source>25%</source>
+        <target>25%</target>
+        <note>Class = "UISegmentedControl"; HZW-Ij-c5U.segmentTitles[3] = "25%"; ObjectID = "HZW-Ij-c5U";</note>
+      </trans-unit>
+      <trans-unit id="Jgl-jV-E27.text">
+        <source>Bill Amount</source>
+        <target>Bill Amount</target>
+        <note>Class = "UILabel"; text = "料金"; ObjectID = "Jgl-jV-E27";</note>
+      </trans-unit>
+      <trans-unit id="gj1-LS-Ygs.title">
+        <source>Settings</source>
+        <target>Settings</target>
+        <note>Class = "UIBarButtonItem"; title = "設定"; ObjectID = "gj1-LS-Ygs";</note>
+      </trans-unit>
+      <trans-unit id="kzC-Ff-VEf.text">
+        <source>Total Bill</source>
+        <target>Total Bill</target>
+        <note>Class = "UILabel"; text = "全料金"; ObjectID = "kzC-Ff-VEf";</note>
+      </trans-unit>
+      <trans-unit id="msX-cF-xTv.segmentTitles[0]">
+        <source>15%</source>
+        <target>15%</target>
+        <note>Class = "UISegmentedControl"; msX-cF-xTv.segmentTitles[0] = "15%"; ObjectID = "msX-cF-xTv";</note>
+      </trans-unit>
+      <trans-unit id="msX-cF-xTv.segmentTitles[1]">
+        <source>18%</source>
+        <target>18%</target>
+        <note>Class = "UISegmentedControl"; msX-cF-xTv.segmentTitles[1] = "18%"; ObjectID = "msX-cF-xTv";</note>
+      </trans-unit>
+      <trans-unit id="msX-cF-xTv.segmentTitles[2]">
+        <source>20%</source>
+        <target>20%</target>
+        <note>Class = "UISegmentedControl"; msX-cF-xTv.segmentTitles[2] = "20%"; ObjectID = "msX-cF-xTv";</note>
+      </trans-unit>
+      <trans-unit id="msX-cF-xTv.segmentTitles[3]">
+        <source>25%</source>
+        <target>25%</target>
+        <note>Class = "UISegmentedControl"; msX-cF-xTv.segmentTitles[3] = "25%"; ObjectID = "msX-cF-xTv";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Tippy/Info.plist" source-language="en" datatype="plaintext" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.1" build-num="8B62"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="TippyTests/Info.plist" source-language="en" datatype="plaintext" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.1" build-num="8B62"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="TippyUITests/Info.plist" source-language="en" datatype="plaintext" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.1" build-num="8B62"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

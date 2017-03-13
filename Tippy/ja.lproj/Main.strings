@@ -1,0 +1,42 @@
+/* Class = "UILabel"; text = "サービス費"; ObjectID = "4vi-xD-q1k"; */
+"4vi-xD-q1k.text" = "サービス費";
+
+/* Class = "UINavigationItem"; title = "サービス費の計算ツール"; ObjectID = "7Mi-bC-MNq"; */
+"7Mi-bC-MNq.title" = "サービス費の計算ツール";
+
+/* Class = "UILabel"; text = "最初に決められたサービス費"; ObjectID = "Fbw-pQ-v2j"; */
+"Fbw-pQ-v2j.text" = "最初に決められたサービス費";
+
+/* Class = "UISegmentedControl"; HZW-Ij-c5U.segmentTitles[0] = "15%"; ObjectID = "HZW-Ij-c5U"; */
+"HZW-Ij-c5U.segmentTitles[0]" = "15%";
+
+/* Class = "UISegmentedControl"; HZW-Ij-c5U.segmentTitles[1] = "18%"; ObjectID = "HZW-Ij-c5U"; */
+"HZW-Ij-c5U.segmentTitles[1]" = "18%";
+
+/* Class = "UISegmentedControl"; HZW-Ij-c5U.segmentTitles[2] = "20%"; ObjectID = "HZW-Ij-c5U"; */
+"HZW-Ij-c5U.segmentTitles[2]" = "20%";
+
+/* Class = "UISegmentedControl"; HZW-Ij-c5U.segmentTitles[3] = "25%"; ObjectID = "HZW-Ij-c5U"; */
+"HZW-Ij-c5U.segmentTitles[3]" = "25%";
+
+/* Class = "UILabel"; text = "料金"; ObjectID = "Jgl-jV-E27"; */
+"Jgl-jV-E27.text" = "料金小計";
+
+/* Class = "UIBarButtonItem"; title = "設定"; ObjectID = "gj1-LS-Ygs"; */
+"gj1-LS-Ygs.title" = "設定";
+
+/* Class = "UILabel"; text = "全料金"; ObjectID = "kzC-Ff-VEf"; */
+"kzC-Ff-VEf.text" = "全料金";
+
+/* Class = "UISegmentedControl"; msX-cF-xTv.segmentTitles[0] = "15%"; ObjectID = "msX-cF-xTv"; */
+"msX-cF-xTv.segmentTitles[0]" = "15%";
+
+/* Class = "UISegmentedControl"; msX-cF-xTv.segmentTitles[1] = "18%"; ObjectID = "msX-cF-xTv"; */
+"msX-cF-xTv.segmentTitles[1]" = "18%";
+
+/* Class = "UISegmentedControl"; msX-cF-xTv.segmentTitles[2] = "20%"; ObjectID = "msX-cF-xTv"; */
+"msX-cF-xTv.segmentTitles[2]" = "20%";
+
+/* Class = "UISegmentedControl"; msX-cF-xTv.segmentTitles[3] = "25%"; ObjectID = "msX-cF-xTv"; */
+"msX-cF-xTv.segmentTitles[3]" = "25%";
+
