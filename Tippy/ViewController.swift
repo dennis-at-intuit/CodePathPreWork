@@ -18,12 +18,30 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let defaults = UserDefaults.standard
+        
+        //  Required functionality #2
         let stringIndex = defaults.string(forKey: "defaultTipPercentageIndex")
         let defaultTipPercentageIndex = (nil == stringIndex) ? 2 : Int(stringIndex!)
         print("Default Tip Percentage index: \(defaultTipPercentageIndex)")
         
         segmentedControlTipPercentages.selectedSegmentIndex = defaultTipPercentageIndex!
         
+        //  Optional functionality #2
+        let timestampCurrent = NSDate()
+        let stringDatePrevious = defaults.string(forKey: "lastEnteredTime")
+        
+        if (nil != stringDatePrevious) {
+            var timestampPrevious = Double(stringDatePrevious!) ?? 0
+            print("Previous timestamp: \(timestampPrevious)")
+            var doubleTimestampCurrent = timestampCurrent.timeIntervalSince1970
+            var difference = doubleTimestampCurrent - timestampPrevious
+            
+            if (difference < 600) {
+                textfieldBillAmount.text = defaults.string(forKey: "lastEnteredValue")
+            }
+        }
+        
+        //  Optional functionality #4
         textfieldBillAmount.becomeFirstResponder()
     }
     
@@ -41,13 +59,19 @@ class ViewController: UIViewController {
         
         let doubleBillAmount = Double(textfieldBillAmount.text!) ?? 0;
         let doubleTipAmount = arrayTipPercentages[segmentedControlTipPercentages.selectedSegmentIndex] * doubleBillAmount
-        let doubleTotalBill = ViewController.calculateTotalBill(billAmount: doubleBillAmount, tipPercentage: doubleTipAmount)
+        let doubleTotalBill = ViewController.calculateTotalBill(billAmount: doubleBillAmount, tipPercentage: arrayTipPercentages[segmentedControlTipPercentages.selectedSegmentIndex])
         
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
         formatter.locale = Locale.current
         labelTipAmount.text = formatter.string(from: NSNumber(value: doubleTipAmount)) ?? "$\(doubleTipAmount)"
         labelTotalBill.text = formatter.string(from: NSNumber(value: doubleTotalBill)) ?? "$\(doubleTotalBill)"
+        
+        let defaults = UserDefaults.standard
+        let timestampCurrent = NSDate()
+        defaults.set(timestampCurrent.timeIntervalSince1970, forKey: "lastEnteredTime")
+        defaults.set(doubleBillAmount, forKey: "lastEnteredValue")
+        defaults.synchronize()
     }
 
     static func calculateTotalBill(billAmount: Double, tipPercentage: Double) -> Double {
